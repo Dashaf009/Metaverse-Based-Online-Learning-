@@ -1,0 +1,15 @@
+export const audioFilesWind = {
+    gearbox: require('./กล่องเกียร์ (Gearbox).mp3'),
+    yawDrive: require('./แกนคอหมุนรับทิศทางลม (Yaw Drive).mp3'),
+    electricGenerator: require('./เครื่องกำเนิดไฟฟ้า (Electric Generator).mp3'),
+    anemometer: require('./เครื่องวัดความเร็วลม (Anemometer).mp3'),
+    rotorBrake: require('./เบรกโรเตอร์ (Rotor Brake).mp3'),
+    mainShaftBearing1: require('./แบริ่งเพลาหลัก (Main Shaft Bearing)1.mp3'),
+    mainShaftBearing2: require('./แบริ่งเพลาหลัก (Main Shaft Bearing)2.mp3'),
+    blades: require('./ใบพัด (Blades).mp3'),
+    bladePitch: require('./มุมใบพัด (Blade Pitch).mp3'),
+    rotor: require('./โรเตอร์ (Rotor).mp3'),
+    windVane: require('./ศรลม (Wind Vane).mp3'),
+    tower: require('./เสา (Tower).mp3'),
+    nacelle: require('./ห้องเครื่อง (Nacelle).mp3'),
+};

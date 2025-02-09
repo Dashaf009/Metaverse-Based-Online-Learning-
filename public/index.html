@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Energy Encyclopedia" />
+    <meta name="keywords" content="water energy, Renewable Water energy" />
+    <meta
+      name="description"
+      content="Since the beginning of civilization, water has played an important part in its development. Its cycle is one of the basic prerequisites for life."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>พลังงานหมุนเวียน</title>
+
+    <!-- Cookie Consent CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+    <!-- Include FontAwesome CSS สำหรับไอคอน -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- (Optional) Include Bootstrap CSS (หากต้องการให้ collapse ทำงานตามที่ Bootsnav คาดหวัง) -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- Cookie Consent JS -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: { background: "#252e39", text: "#ffffff" },
+            button: { background: "#14a7d0", text: "#ffffff" },
+          },
+          theme: "classic",
+          position: "bottom-right",
+          content: {
+            message:
+              "This website uses cookies to ensure you get the best experience on our website.",
+            dismiss: "Got it!",
+            link: "Learn more",
+            href: "/privacy-policy",
+          },
+        });
+      });
+    </script>
+
+
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

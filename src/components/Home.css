@@ -1,0 +1,142 @@
+.homePage {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #e1bee7);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.gradient-header {
+  background: linear-gradient(90deg, #42a5f5, #7e57c2);
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.full-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f1f8e9, #ffecb3);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.full-image {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.full-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.icons-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #b3e5fc);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.icons-row-horizontal {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.icon-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.icon-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.chapter-icon__caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.gradient-footer {
+  background: linear-gradient(90deg, #00796b, #004d40);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-section {
+  color: #ffffff;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #cfd8dc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
