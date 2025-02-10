@@ -148,7 +148,7 @@ const WaterEnergy = () => {
             {/* Features Section */}
                         <section className="content-section" data-aos="fade-left">
                             <div className="text-content">
-                                <h2>เรียนรู้เพิ่มเติมเกี่ยวกับพลังงานแสงอาทิตย์</h2>
+                                <h2>เรียนรู้เพิ่มเติมเกี่ยวกับพลังงานแสงน้ำ</h2>
                             </div>
                             <div className="centered-video">
                                 <video controls>
