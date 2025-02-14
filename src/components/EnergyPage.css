@@ -296,3 +296,87 @@ h2 {
   font-weight: bold;
   text-align: center;
 }
+/* ทำให้กล่องปุ่ม Overlay อยู่เหนือรูปภาพ */
+.audio-overlay {
+  position: absolute;    /* สำคัญ: ต้องเป็น absolute */
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 999;         /* สำคัญ: เพื่ออยู่เหนือรูป */
+}
+
+/* ปุ่มเล่นเสียง */
+.audio-overlay-button {
+  background-color: #4caf50;
+  border: none;
+  color: #3ac654;          /* กำหนดสีข้อความปุ่ม */
+  padding: 10px;
+  border-radius: 8px;   /* ปรับให้เป็นมุมโค้งแทน */
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.audio-overlay-button:hover {
+  opacity: 1;
+}
+
+/* ปุ่มหยุดเป็นสีแดง */
+.audio-overlay-button.stop {
+  background-color: red;
+}
+.audio-overlay-button {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-align: center;          /* จัดชิดข้อความไปทางขวา */
+  white-space: normal;        /* ให้ข้อความแบ่งบรรทัดได้ */
+  word-break: break-word;     /* ตัดคำที่ยาวเกิน */
+  font-size: 1.3rem;            /* ใช้หน่วย relative เพื่อความ responsive */
+  min-width: 100px;           /* กำหนดความกว้างขั้นต่ำ */
+  max-width: 150px;           /* กำหนดความกว้างสูงสุด */
+  transition: background 0.3s ease, padding 0.3s ease, font-size 0.3s ease;
+}
+
+.audio-overlay-button:hover {
+  opacity: 2;
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .audio-overlay-button {
+    padding: 6px 10px;
+    font-size: 1.3rem;
+  }
+}.green-button {
+  background-color: #00796b; /* สีเขียว */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.red-button:hover {
+  background-color: red;
+}
+.green-button:hover {
+  background-color: #45a049;
+}

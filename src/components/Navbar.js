@@ -32,7 +32,7 @@ const Navbar = () => {
           <Link to="/solar-energy" className="navbar-text">พลังงานแสงอาทิตย์</Link>
           <Link to="/geothermal-energy" className="navbar-text">พลังงานความร้อนใต้พิภพ</Link>
           <Link to="/biomass-energy" className="navbar-text">พลังงานชีวมวล</Link>
-          <Link to="/User-Manual" className="navbar-text">คู่มือ</Link>
+          
         </div>
       </div>
     </nav>

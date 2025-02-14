@@ -1,0 +1,124 @@
+/* HomeManual.css */
+
+/* กล่องคู่มือที่ลอยด้านซ้ายของหน้าจอ */
+.home-manual-container {
+    position: fixed;
+    top: 50%;
+    left: 0; /* ✅ ทำให้กล่องอยู่ติดขอบซ้าย */
+    transform: translateY(-50%);
+    z-index: 9999;
+    font-family: sans-serif;
+  }
+  
+  /* ปุ่มปิด (X) อยู่ด้านในคู่มือ */
+  .home-manual-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 10000;
+  }
+  
+  .home-manual-close-btn:hover {
+    background: #d32f2f;
+  }
+  
+  /* แถบเล็กที่แสดงเมื่อคู่มือถูกซ่อน */
+  .home-manual-tab {
+    background: #2196f3; /* สีน้ำเงิน */
+    color: #fff;
+    padding: 10px;
+    width: 60px;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* แสดงคู่มือเมื่อเปิดอยู่ */
+  .home-manual-container.open .home-manual-panel {
+    display: block;
+  }
+  
+  /* กล่องคู่มือหลัก */
+  .home-manual-panel {
+    width: 300px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: none;
+    position: relative;
+  }
+  
+  /* ปุ่มซ่อนอยู่ด้านขวา แต่ไม่ชน X */
+  .home-manual-toggle-btn {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    background: #607d8b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .home-manual-toggle-btn:hover {
+    background: #455a64;
+  }
+  
+  /* หัวข้อในคู่มือ */
+  .home-manual-panel h3 {
+    margin-top: 0;
+    color: #00796b;
+  }
+  
+  /* ปุ่มสีเขียว */
+  .green-button {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .green-button:hover {
+    background-color: #43a047;
+  }
+  
+  /* ปุ่มสีแดง */
+  .red-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .red-button:hover {
+    background: #e53935;
+  }
+  
+  /* จัดเรียงปุ่ม */
+  .buttons-row {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
