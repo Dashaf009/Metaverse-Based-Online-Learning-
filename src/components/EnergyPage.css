@@ -350,9 +350,25 @@ h2 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .audio-overlay-button {
-    padding: 6px 10px;
-    font-size: 1.3rem;
+    font-size: 0.9rem;  /* ลดขนาดตัวอักษร */
+    padding: 6px 8px;  /* ลด padding */
+    min-width: 80px;   /* ลดขนาดปุ่ม */
+    max-width: 100px;
+    white-space: normal; /* ทำให้ข้อความตัดบรรทัดได้ */
+    word-break: break-word;
   }
+  .audio-overlay-button:nth-child(odd) {
+    top: calc(var(--top) + 10%);
+  }
+  .audio-overlay-button:nth-child(even) {
+    top: calc(var(--top) - 5%);
+  }
+   /* ปรับระยะห่างของปุ่ม */
+   .audio-controls {
+     gap: 5px;
+     flex-wrap: wrap;
+   }
+
 }.green-button {
   background-color: #00796b; /* สีเขียว */
   color: white;

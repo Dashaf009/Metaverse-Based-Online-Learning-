@@ -180,29 +180,29 @@ const waveHotspots = [
 
 /* HotspotOverlay Component ที่ render ปุ่ม overlay ตามตำแหน่ง */
 const HotspotOverlay = ({ hotspots, togglePlayPause, currentSrc, isPlaying }) => {
-  return (
-    <>
-      {hotspots.map((spot, index) => (
-        <button
-          key={index}
-          className="audio-overlay-button"
-          onClick={() => togglePlayPause(spot.audio)}
-          style={{
-            position: 'absolute',
-            top: spot.top,
-            left: spot.left,
-            transform: 'translate(-50%, -50%)',
-            zIndex: 999,
-            backgroundColor:
-              currentSrc === spot.audio && isPlaying ? 'red' : undefined,
-          }}
-        >
-          {currentSrc === spot.audio && isPlaying ? 'หยุดเสียง' : spot.label}
-        </button>
-      ))}
-    </>
-  );
-};
+    return (
+      <>
+        {hotspots.map((spot, index) => (
+          <button
+            key={index}
+            className="audio-overlay-button"
+            onClick={() => togglePlayPause(spot.audio)}
+            style={{
+              position: 'absolute',
+              top: spot.top,
+              left: spot.left,
+              transform: 'translate(-50%, -50%)',
+              zIndex: 999,
+              backgroundColor: currentSrc === spot.audio && isPlaying ? 'red' : undefined,
+              '--top': spot.top  // ✅ กำหนดค่า CSS variable
+            }}
+          >
+            {currentSrc === spot.audio && isPlaying ? 'หยุดเสียง' : spot.label}
+          </button>
+        ))}
+      </>
+    );
+  };
 
 const WaterEnergy = () => {
   const [currentAudio, setCurrentAudio] = useState(null);
