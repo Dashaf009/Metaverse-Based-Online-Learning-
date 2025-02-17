@@ -283,7 +283,7 @@ h2 {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4); /* เพิ่มความทึบ */
+  background: rgba(0, 0, 0, 0.9); /* เพิ่มความทึบ */
   z-index: 2;
   display: flex;
   align-items: center;
@@ -334,9 +334,10 @@ h2 {
   padding: 8px 12px;
   cursor: pointer;
   text-align: center;          /* จัดชิดข้อความไปทางขวา */
+  opacity: 1;                  /* ทำให้ปุ่มไม่โปร่งแสง */
   white-space: normal;        /* ให้ข้อความแบ่งบรรทัดได้ */
   word-break: break-word;     /* ตัดคำที่ยาวเกิน */
-  font-size: 1.3rem;            /* ใช้หน่วย relative เพื่อความ responsive */
+  font-size: 1.1rem;            /* ใช้หน่วย relative เพื่อความ responsive */
   min-width: 100px;           /* กำหนดความกว้างขั้นต่ำ */
   max-width: 150px;           /* กำหนดความกว้างสูงสุด */
   transition: background 0.3s ease, padding 0.3s ease, font-size 0.3s ease;

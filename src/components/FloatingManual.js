@@ -28,16 +28,18 @@ const FloatingManual = () => {
           </button>
           <h3>คู่มือการใช้งาน</h3>
           <p>
-            กรุณาชมโมเดล 3D ควบคู่กับภาพและเสียงประกอบด้านล่าง
+            1.ผู้ใช้สามารถชมโมเดล 3D ควบคู่กับภาพและเสียงประกอบด้านล่าง
             <br />
-            โดยคลิกที่{' '}
-            <strong style={{ color: 'green' }}>ปุ่มตัวอย่าง</strong> เพื่อเล่นเสียงบรรยาย และกดที่{' '}
+            2.โดยคลิกที่{' '}
+            <strong style={{ color: 'green' }}>ปุ่มสีเขียว</strong> เพื่อเล่นเสียงบรรยาย และกดที่{' '}
             <strong style={{ color: 'red' }}>ปุ่มสีแดง</strong> เพื่อหยุดเสียง
           </p>
           <div className="buttons-row">
             <button className="green-button">ปุ่มสีเขียว</button>
             <button className="red-button">ปุ่มสีแดง</button>
+            
           </div>
+          <br/>3.ผู้ใช้งานสามารถเข้าถึงพลังงานต่างๆได้ที่ <strong style={{ color: 'green' }}>แถบเมนูด้านบน</strong>
         </div>
       )}
     </div>
